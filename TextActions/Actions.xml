@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<action-recipes>
+	
+	<action id="com.onecrayon.sugar.seesaw.balance-delimiter" category="seesaw.actions/1">
+		<script>balance-delimiters.js</script>
+		<setup>
+			<select>both</select>
+		</setup>
+	</action>
+	
+	<action id="com.onecrayon.sugar.seesaw.jump-to-delimiter" category="seesaw.actions/2">
+		<script>balance-delimiters.js</script>
+		<setup>
+			<select>opposite</select>
+		</setup>
+	</action>
+	
+</action-recipes>
