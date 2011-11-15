@@ -3,6 +3,7 @@
 	
 	<action id="com.onecrayon.sugar.seesaw.balance-delimiter" category="seesaw.actions/1">
 		<script>balance-delimiters.js</script>
+		<key-equivalent>command option =</key-equivalent>
 		<setup>
 			<select>both</select>
 		</setup>
@@ -10,6 +11,7 @@
 	
 	<action id="com.onecrayon.sugar.seesaw.jump-to-delimiter" category="seesaw.actions/2">
 		<script>balance-delimiters.js</script>
+		<key-equivalent>command option -</key-equivalent>
 		<setup>
 			<select>opposite</select>
 		</setup>
