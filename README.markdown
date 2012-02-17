@@ -13,14 +13,18 @@ For instance, take this Javascript fragment:
 
 If you place your cursor next to the first `{` character and select **Actions&rarr;Seesaw&rarr;Select Balanced Delimiters** then the first `{` and last `}` characters will both be selected. Conversely, if you chose **Jump To Balanced Delimiter** instead, the last `}` character would be selected.
 
-This allows you to very quickly see which delimiters are balanced against one another or to jump to the start or end of a block.
+This allows you to very quickly see which delimiters are balanced against one another or to jump to the start or end of a block. If eligible characters are on both sides of your cursor, Seesaw will use the one immediately to the left.
 
-Seesaw currently works with the following characters:
+Seesaw currently works with the following:
 
 * ( and )
 * [ and ]
 * { and }
 * < and >
+* HTML and XML tags
+* Quotation marks around strings
+* Slashes delimiting Javascript regex literals
+* Comment delimiters around block comments
 
 Lastly, if you place your cursor next to a delimiter character inside of a string, Seesaw will only look for closing delimiters in strings. For instance, take this nonsensical but illustrative code fragment:
 
@@ -50,13 +54,6 @@ Alternately, you can [download the project](https://github.com/onecrayon/Seesaw.
 Seesaw.sugar is written entirely in XML and JavaScript using Espresso's [JavaScript API](http://wiki.macrabbit.com/index/JavaScriptActions/)! To discover how I'm doing things or tweak its behavior to fit your own needs, right click the Sugar in the Finder and choose Show Package Contents or fork this project and go to town.
 
 You can also [let me know](http://onecrayon.com/about/contact/) if you have any feedback, requests, or run across any problems.
-
-I would like to implement the following (and if you want any of this sooner, feel free to try implementing it yourself!):
-
-* Itemizer-based handling for entire HTML tags
-* Quotation marks around strings
-* Itemizer-based handling for slashes around Javascript regex zones
-* Maybe balancing multiline comment delimiters? Other balanced delimiters that I've overlooked?
 
 ## MIT License
 
