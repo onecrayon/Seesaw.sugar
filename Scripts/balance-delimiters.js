@@ -44,7 +44,7 @@ action.performWithContext = function(context, outError) {
 	- A single character is selected, and it is one of our balanced characters
 	- No selection, the cursor is not the first index in the document, and the character to the left of the cursor is one of our balanced characters
 	*/
-	if ((selection.length === 1 && delimiterChars.indexOf(context.substringWithRange(selection)) >= 0) || (selection.length === 0 && selection.location > 0 && delimiterChars.indexOf(context.substringWithRange(new Range(selection.location - 1, 1))) >= 0)) {
+	if ((selection.length === 1 && delimiterChars.indexOf(context.substringWithRange(selection)) >= 0) || (selection.length === 0 && selection.location > 0 && delimiterChars.indexOf(context.substringWithRange(new Range(selection.location - 1, 1))) >= 0 && !balancedItemZones.matches(context.syntaxTree.zoneAtCharacterIndex(selection.location)))) {
 		singleCharacter = true;
 	}
 	
