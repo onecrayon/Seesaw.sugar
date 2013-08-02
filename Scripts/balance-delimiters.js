@@ -17,7 +17,7 @@ var delimiterChars = [
 ];
 
 // The zones defining itemizers we can balance
-var balancedItemZones = new SXSelector('tag.open, tag.open *, tag.close, tag.close *'),
+var balancedItemZones = new SXSelector('tag.open, tag.open *, tag.close, tag.close *, php delimiter.source, php delimiter.source *'),
 	balancedSyntaxZones = new SXSelector('string > punctuation.definition, regex.literal > punctuation.definition, comment.block > punctuation.definition');
 
 action.canPerformWithContext = function(context, outError) {
