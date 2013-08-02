@@ -22,6 +22,7 @@ Seesaw currently works with the following:
 * { and }
 * < and >
 * HTML and XML tags
+* PHP delimiters (`<?php` and `?>`)
 * Quotation marks around strings
 * Slashes delimiting Javascript regex literals
 * Comment delimiters around block comments
